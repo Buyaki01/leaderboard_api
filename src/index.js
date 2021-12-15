@@ -1,13 +1,14 @@
-import _ from 'lodash';
 import './style.css';
+import scores from './scoresList.js';
 
-function component() {
-  const element = document.createElement('div');
+const tableBody = document.querySelector('tbody');
+function scoreElement(name, score) {
+  const tableRow = document.createElement('tr');
+  const tableData = document.createElement('td');
 
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+  tableData.innerHTML = `${name}: ${score} `;
 
-  return element;
+  tableRow.appendChild(tableData);
+  tableBody.appendChild(tableRow);
 }
-
-document.body.appendChild(component());
+scores.forEach((score) => scoreElement(score.user, score.score));
