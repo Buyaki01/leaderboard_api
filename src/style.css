@@ -1,0 +1,11 @@
+.table {
+  border: 2px solid black;
+}
+
+.userName {
+  margin-bottom: 16px;
+}
+
+.userScore {
+  margin-bottom: 16px;
+}
