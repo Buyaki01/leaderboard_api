@@ -1,5 +1,26 @@
-.table {
+.refresh,
+.table,
+.yourName,
+.yourScore,
+.submitBtn {
   border: 2px solid black;
+}
+
+p {
+  font-size: 20px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black;
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: black;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: black;
 }
 
 .userName {
@@ -8,4 +29,13 @@
 
 .userScore {
   margin-bottom: 16px;
+}
+
+.refresh,
+.submitBtn {
+  box-shadow: 3px 3px black;
+}
+
+.submitBtn {
+  margin-left: 130px;
 }
